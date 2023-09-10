@@ -163,6 +163,18 @@ const productos = [
     }
 ]
 
+// Esta función cargará los productos en la página
+function cargarTodosLosProductos() {
+    // Llama a la función cargarProductos con el arreglo completo de productos
+    cargarProductos(productos);
+
+    // Establece el título principal
+    tituloPrincipal.innerText = "Todos los productos";
+}
+
+// Llama a la función para cargar todos los productos cuando se carga la página
+window.addEventListener('load', cargarTodosLosProductos);
+
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
