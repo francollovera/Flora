@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarpiShop</title>
+    <title>Flora Bijou</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://js.stripe.com; connect-src 'self' https://api.stripe.com;">
+    <script src="https://js.stripe.com/v3/"></script> -->
+
     <link rel="stylesheet" <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./main.css">   
-    <script src="https://sdk.mercadopago.com/js/v2"></script>
+  
+    
 </head>
 <body>
     <div class="wrapper">
@@ -62,7 +66,10 @@
                             <p>Total:</p>
                             <p id="total">$3000</p>
                         </div>
-                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                        <button id="checkout" 
+                        class="carrito-acciones-comprar"
+                        >Comprar ahora</button>
+                        
                     </div>
                 </div>
                 
@@ -73,7 +80,17 @@
              
         </main>
     </div>
+    
     <script src="./carrito.js"></script>
+    <!-- <script>
+        var stripe = Stripe(
+            "pk_test_51NnXVaDJRvVPtnWiibRD0MvBcizzisC8xRAlVrOZj5xXnRUDIMTCNdhZ357BVeFxqh17pNKk6Rekx6k33piAe6QQ001PJbTAxe"
+        );
+        document.getElementById("checkout").addEventListener("click", function(){
+            stripe.redirectToCheckout({
+               Url:'https://buy.stripe.com/test_dR69DG1kBb2m6R2144'})
+            })
+    </script> -->
     <script src="./menu.js"></script>
     <script src="./main.js"></script>
     
