@@ -18,14 +18,14 @@
     font-family: "Rubik", sans-serif;
 }
 
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4,h5,p{
     margin: 0;
     padding: 0;
     text-align: center;
     gap: 10px;
 
 }
-p,a,input,textarea,ul{
+a,input,textarea,ul{
     margin: 0;
     padding: 0;
     
