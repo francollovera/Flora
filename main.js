@@ -1,3 +1,5 @@
+
+
 const productos = [
     {
         "id": "abrigo-01",
@@ -163,6 +165,7 @@ const productos = [
     }
 ]
 
+
 // Esta función cargará los productos en la página
 function cargarTodosLosProductos() {
     // Llama a la función cargarProductos con el arreglo completo de productos
@@ -185,6 +188,7 @@ const numerito = document.querySelector("#numerito");
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
 }))
+
 
 
 function cargarProductos(productosElegidos) {
@@ -233,10 +237,16 @@ botonesCategorias.forEach(boton => {
 function actualizarBotonesAgregar(){
     botonesAgregar = document.querySelectorAll(".producto-agregar")
     botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito);
+        boton.addEventListener("click", (e) => {
+            agregarAlCarrito(e);
+            Swal.fire({
+                title: '¡Producto agregado correctamente!',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+              });
+        });
     });
 }
-
 
 let productosEnCarrito;
 
@@ -265,7 +275,13 @@ productosEnCarrito[index].cantidad++;
 actualizarNumerito();
 
 localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
+
+
 };
+
+
+
+
 
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);

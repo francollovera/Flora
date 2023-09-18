@@ -2,7 +2,9 @@
 
 :root{
     --clr-main: #437196;
+    --clr-main-dark: #3d6586;
     --clr-main-light : #305781;
+    --clr-main-back: #4e7ea5;
     --clr-white: #eddddd;
     --clr-gray: #c9bcbc;
     --clr-red: #961818;
@@ -16,9 +18,17 @@
     font-family: "Rubik", sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,input,textarea,ul{
+h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
+    text-align: center;
+    gap: 10px;
+
+}
+p,a,input,textarea,ul{
+    margin: 0;
+    padding: 0;
+    
 
 }
 ul{
@@ -48,6 +58,8 @@ aside{
 .logo{
 font-weight: 400;
 font-size: 1.3rem;
+display: flex;
+align-items: flex-end;
 }
 .menu{
     display: flex;
@@ -124,18 +136,21 @@ background-color: transparent;
     color: var(--clr-white);
 }
 .texto-footer{
-    color: var(--clr-main-light);
+    color: wheat;
     font-size: .85rem;
 }
 main{
-    background-color:var(--clr-white);
+    /* background-color:var(--clr-white); */
+    background-image: url('./blue-2852879_1280-fotor-20230918161630.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
     padding: 3rem;
 }
 .titulo-principal{
-    color: var(--clr-main);
+    color: var(--clr-main-dark);
     margin-bottom: 2rem;
 }
 .contenedor-productos{
@@ -222,8 +237,8 @@ color: var(--clr-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-gray);
-    color: var(--clr-main);
+    background-color: var(--clr-main-back);
+    color: var(--clr-white);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
@@ -241,7 +256,7 @@ color: var(--clr-white);
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: rgb(218, 210, 210);
     cursor: pointer;
 }
 
