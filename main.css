@@ -139,6 +139,8 @@ background-color: transparent;
 .texto-footer{
     color: wheat;
     font-size: .85rem;
+    display: flex;
+    align-items: flex-start;
 }
 main{
     /* background-color:var(--clr-white); */
