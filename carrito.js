@@ -130,29 +130,52 @@ function Mercado() {
     price: totalCalculado
   };
 
-  fetch("https://flora-two.vercel.app/create_preference", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(orderData),
-  })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (preference) {
-      createCheckoutButton(preference.id);
+//   fetch("https://flora-two.vercel.app/create_preference", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(orderData),
+//   })
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (preference) {
+//       createCheckoutButton(preference.id);
 
-      $(".shopping-cart").fadeOut(500);
-      setTimeout(() => {
-        $(".container_payment").show(500).fadeIn();
-      }, 500);
-    })
-    // .catch(function () {
-    //   alert("Unexpected error");
-    //   $('#checkout-btn').attr("disabled", false);
-    // });
-};
+//       $(".shopping-cart").fadeOut(500);
+//       setTimeout(() => {
+//         $(".container_payment").show(500).fadeIn();
+//       }, 500);
+//     })
+    
+// };
+
+fetch("https://flora-two.vercel.app/create_preference", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(orderData),
+})
+  .then(function (response) {
+    if (!response.ok) {
+      throw new Error("La solicitud no fue exitosa");
+    }
+    return response.json();
+  })
+  .then(function (preference) {
+    createCheckoutButton(preference.id);
+
+    $(".shopping-cart").fadeOut(500);
+    setTimeout(() => {
+      $(".container_payment").show(500).fadeIn();
+    }, 500);
+  })
+  .catch(function (error) {
+    console.error("Error en la solicitud:", error);
+  });
+}
 
 function createCheckoutButton(preferenceId) {
   // Initialize the checkout
