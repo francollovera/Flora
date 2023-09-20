@@ -150,6 +150,7 @@ function Mercado() {
 //     })
    
 // };
+
 fetch("https://flora-two.vercel.app/", {
   method: "POST",
   headers: {
@@ -174,6 +175,7 @@ fetch("https://flora-two.vercel.app/", {
   .catch(function (error) {
     console.error("Error en la solicitud:", error);
   });
+}
 
 function createCheckoutButton(preferenceId) {
   // Initialize the checkout
