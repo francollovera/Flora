@@ -425,6 +425,8 @@ color: var(--clr-white);
     }
     .swal2-container{
     margin: 13px;
+    padding: 0;
     
     }
+    
 }
