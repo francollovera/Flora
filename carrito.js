@@ -130,7 +130,7 @@ function Mercado() {
     price: totalCalculado
   };
 
-  fetch("https://flora-two.vercel.app/create_preference", {
+  fetch("https://backflora.vercel.app/create_preference", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
