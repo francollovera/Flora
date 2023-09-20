@@ -130,7 +130,7 @@ function Mercado() {
     price: totalCalculado
   };
 
-  fetch("http://localhost:8080/create_preference", {
+  fetch("https://flora-two.vercel.app/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -148,10 +148,7 @@ function Mercado() {
         $(".container_payment").show(500).fadeIn();
       }, 500);
     })
-    // .catch(function () {
-    //   alert("Unexpected error");
-    //   $('#checkout-btn').attr("disabled", false);
-    // });
+   
 };
 
 function createCheckoutButton(preferenceId) {
