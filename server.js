@@ -1,3 +1,5 @@
+
+
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -17,7 +19,7 @@ app.use(express.static(path.join(__dirname, "./")));
 app.use(cors());
 
 app.get("/", function (req, res) {
-  const filePath = path.resolve(__dirname, "carrito.html");
+  const filePath = path.resolve(__dirname, "/carrito.html");
   res.sendFile(filePath);
 });
 
@@ -58,6 +60,6 @@ app.get("/feedback", function (req, res) {
   });
 });
 
-app.listen(8080, () => {
+app.listen("https://flora-two.vercel.app", () => {
   console.log("The server is now running on Port 8080");
 });
