@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
   res.sendFile(filePath);
 });
 
-app.post("/create_preference", (req, res) => {
+app.post("create_preference", (req, res) => {
   let preference = {
     items: [
       {
