@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
   res.sendFile(filePath);
 });
 
-app.post("create_preference", (req, res) => {
+app.post("/create_preference", (req, res) => {
   let preference = {
     items: [
       {
@@ -33,8 +33,8 @@ app.post("create_preference", (req, res) => {
       },
     ],
     back_urls: {
-      success: "https://flora-two.vercel.app/",
-      failure: "https://flora-two.vercel.app/",
+      success: "https://flora-two.vercel.app",
+      failure: "https://flora-two.vercel.app",
       pending: "",
     },
     auto_return: "approved",
