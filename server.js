@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "./")));
 app.use(cors());
 
 app.get("/", function (req, res) {
-  const filePath = path.resolve(__dirname, "/carrito.html");
+  const filePath = path.resolve(__dirname, "carrito.html");
   res.sendFile(filePath);
 });
 
