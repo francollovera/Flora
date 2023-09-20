@@ -122,7 +122,7 @@ botonComprar.addEventListener("click", Mercado );
 
 function Mercado() {
 
-  // $('#checkout-btn').attr("disabled", true);
+ 
 
   const orderData = {
     quantity: 1,
@@ -130,52 +130,26 @@ function Mercado() {
     price: totalCalculado
   };
 
-//   fetch("https://flora-two.vercel.app/", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(orderData),
-//   })
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (preference) {
-//       createCheckoutButton(preference.id);
+  fetch("https://flora-two.vercel.app/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(orderData),
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (preference) {
+      createCheckoutButton(preference.id);
 
-//       $(".shopping-cart").fadeOut(500);
-//       setTimeout(() => {
-//         $(".container_payment").show(500).fadeIn();
-//       }, 500);
-//     })
+      $(".shopping-cart").fadeOut(500);
+      setTimeout(() => {
+        $(".container_payment").show(500).fadeIn();
+      }, 500);
+    })
    
-// };
-
-fetch("https://flora-two.vercel.app/", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify(orderData),
-})
-  .then(function (response) {
-    if (!response.ok) {
-      throw new Error("La solicitud no fue exitosa");
-    }
-    return response.json();
-  })
-  .then(function (preference) {
-    createCheckoutButton(preference.id);
-
-    $(".shopping-cart").fadeOut(500);
-    setTimeout(() => {
-      $(".container_payment").show(500).fadeIn();
-    }, 500);
-  })
-  .catch(function (error) {
-    console.error("Error en la solicitud:", error);
-  });
-}
+};
 
 function createCheckoutButton(preferenceId) {
   // Initialize the checkout
@@ -200,26 +174,4 @@ function createCheckoutButton(preferenceId) {
   window.checkoutButton = renderComponent(bricksBuilder);
 }
 
-// Handle price update
-// function updatePrice() {
-//   let quantity = producto.cantidad;
-//   let unitPrice = producto.precio; 
-//   let amount = parseInt(unitPrice) * parseInt(quantity);
 
-//   document.getElementById("cart-total").innerHTML = "$ " + amount;
-//   document.getElementById("summary-price").innerHTML = "$ " + unitPrice;
-//   document.getElementById("summary-quantity").innerHTML = quantity;
-//   document.getElementById("summary-total").innerHTML = "$ " + amount;
-// }
-
-// document.getElementById("quantity").addEventListener("change", updatePrice);
-// updatePrice();
-
-// Go back
-// document.getElementById("go-back").addEventListener("click", function () {
-//   $(".container_payment").fadeOut(500);
-//   setTimeout(() => {
-//     $(".shopping-cart").show(500).fadeIn();
-//   }, 500);
-//   $('#checkout-btn').attr("disabled", false);
-// });
