@@ -137,7 +137,7 @@ try {
   })
     .then(function (response) {
       if (!response.ok) {
-        throw new Error("La solicitud no se completó correctamente");
+        throw new Error(console.log(error));
       }
       return response.json();
     })
