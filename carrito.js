@@ -125,25 +125,7 @@ function Mercado() {
     price: totalCalculado
   };
 
-//   fetch("https://backflora.vercel.app/create_preference", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(orderData),
-//   })
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (preference) {
-//       createCheckoutButton(preference.id);
 
-//       $(".shopping-cart").fadeOut(500);
-//       setTimeout(() => {
-//         $(".container_payment").show(500).fadeIn();
-//       }, 500);
-//     });
-// }
 
 try {
   fetch("https://backflora.vercel.app/create_preference", {
