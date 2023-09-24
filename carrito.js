@@ -110,7 +110,7 @@ function actualizarTotal() {
 
 // REPLACE WITH YOUR PUBLIC KEY AVAILABLE IN: https://developers.mercadopago.com/panel
 const mercadopago = new MercadoPago('APP_USR-5102c4a1-b24f-4aed-80d0-29d6a0a2ac3f', {
-  locale: '<LOCALE>' // The most common are: 'pt-BR', 'es-AR' and 'en-US'
+  locale: 'es-AR' // The most common are: 'pt-BR', 'es-AR' and 'en-US'
 });
 
 const bricksBuilder = mercadopago.bricks();
