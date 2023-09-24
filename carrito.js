@@ -136,9 +136,7 @@ try {
     body: JSON.stringify(orderData),
   })
     .then(function (response) {
-      if (!response.ok) {
-        throw new Error("La solicitud no se completó correctamente");
-      }
+      
       return response.json();
     })
     .then(function (preference) {
