@@ -171,9 +171,15 @@ try {
     body: JSON.stringify(orderData),
   })
     .then(function (response) {
+      if (!response.ok) {
+        throw new Error("La solicitud no pudo ser completada correctamente.");
+      }
       return response.json();
     })
     .then(function (preference) {
+      if (!preference || typeof preference.id === "undefined") {
+        throw new Error("La respuesta del servidor no contiene un ID de preferencia válido.");
+      }
       createCheckoutButton(preference.id);
 
       $(".shopping-cart").fadeOut(500);
@@ -186,7 +192,6 @@ try {
     });
 } catch (error) {
   console.error(error);
-}
 }
 
 
