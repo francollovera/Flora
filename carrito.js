@@ -127,31 +127,34 @@ function Mercado() {
 
 
 
-  try {
-    const response = await fetch("https://flora-two.vercel.app/create_preference", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(orderData),
+try {
+  fetch("https://flora-two.vercel.app/create_preference", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(orderData),
+  })
+    .then(function (response) {
+      
+      return response.json();
+    })
+    .then(function (preference) {
+      createCheckoutButton(preference.id);
+
+      $(".shopping-cart").fadeOut(500);
+      setTimeout(() => {
+        $(".container_payment").show(500).fadeIn();
+      }, 500);
+    })
+    .catch(function (error) {
+      console.log(error);
+      
     });
-  
-    if (!response.ok) {
-      throw new Error("La solicitud no se completó correctamente");
-    }
-  
-    const preference = await response.json();
-    createCheckoutButton(preference.id);
-  
-    $(".shopping-cart").fadeOut(500);
-    setTimeout(() => {
-      $(".container_payment").show(500).fadeIn();
-    }, 500);
-  } catch (error) {
-    console.log( error);
-   
-  }
-  
+} catch (error) {
+  console.log(error);
+}
+}
 
 function createCheckoutButton(preferenceId) {
   // Initialize the checkout
