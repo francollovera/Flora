@@ -128,7 +128,7 @@ function Mercado() {
 
 
 try {
-  fetch("https://backflora.vercel.app/create_preference", {
+  fetch("https://flora-two.vercel.app/create_preference", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
