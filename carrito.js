@@ -127,9 +127,37 @@ function Mercado() {
 
 
 
-try {
+// try {
   
-  fetch("/create_preference", {
+//   fetch("http://localhost:8080/create_preference", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(orderData),
+//   })
+//     .then(function (response) {
+      
+//       return response.json();
+//     })
+//     .then(function (preference) {
+//       createCheckoutButton(preference.id);
+
+//       $(".shopping-cart").fadeOut(500);
+//       setTimeout(() => {
+//         $(".container_payment").show(500).fadeIn();
+//       }, 500);
+//     })
+    
+// } catch (error) {
+//   console.error(error);
+// }
+// }
+
+const apiUrl = process.env.API_URL || "https://flora-two.vercel.app"; 
+
+try {
+  fetch(`${apiUrl}/create_preference`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -137,7 +165,6 @@ try {
     body: JSON.stringify(orderData),
   })
     .then(function (response) {
-      
       return response.json();
     })
     .then(function (preference) {
@@ -148,11 +175,15 @@ try {
         $(".container_payment").show(500).fadeIn();
       }, 500);
     })
-    
+    .catch(function (error) {
+      console.error(error);
+    });
 } catch (error) {
   console.error(error);
 }
 }
+
+
 
 function createCheckoutButton(preferenceId) {
   // Initialize the checkout
