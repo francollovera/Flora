@@ -156,14 +156,10 @@ function Mercado() {
 // }
 
 
-let apiUrl;
+let apiUrl= "https://flora-two.vercel.app";
 
 
-if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
-  apiUrl = "http://localhost:8080";
-} else {
-  apiUrl = "https://flora-two.vercel.app";
-}
+
 
 
 try {
