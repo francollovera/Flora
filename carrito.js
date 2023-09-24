@@ -118,6 +118,7 @@ const bricksBuilder = mercadopago.bricks();
 // Handle call to backend and generate preference.
 botonComprar.addEventListener("click", Mercado);
 
+
 function Mercado() {
   const orderData = {
     quantity: 1,
@@ -154,10 +155,14 @@ function Mercado() {
 // }
 // }
 
-if (window.location.hostname === "localhost" ) {
-  const apiUrl = "http://localhost:8080";
+
+let apiUrl;
+
+
+if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+  apiUrl = "http://localhost:8080";
 } else {
-  const apiUrl = "https://flora-two.vercel.app";
+  apiUrl = "https://flora-two.vercel.app";
 }
 
 
