@@ -154,7 +154,12 @@ function Mercado() {
 // }
 // }
 
-const apiUrl = process.env.API_URL || "https://flora-two.vercel.app"; 
+if (window.location.hostname === "localhost" ) {
+  const apiUrl = "http://localhost:8080";
+} else {
+  const apiUrl = "https://flora-two.vercel.app";
+}
+
 
 try {
   fetch(`${apiUrl}/create_preference`, {
