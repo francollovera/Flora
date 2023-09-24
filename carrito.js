@@ -147,10 +147,7 @@ try {
         $(".container_payment").show(500).fadeIn();
       }, 500);
     })
-    .catch(function (error) {
-      console.log(error);
-      
-    });
+    
 } catch (error) {
   console.log(error);
 }
