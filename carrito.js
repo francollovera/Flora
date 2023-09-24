@@ -128,32 +128,7 @@ function Mercado() {
 
 
 
-// try {
-  
-//   fetch("http://localhost:8080/create_preference", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(orderData),
-//   })
-//     .then(function (response) {
-      
-//       return response.json();
-//     })
-//     .then(function (preference) {
-//       createCheckoutButton(preference.id);
 
-//       $(".shopping-cart").fadeOut(500);
-//       setTimeout(() => {
-//         $(".container_payment").show(500).fadeIn();
-//       }, 500);
-//     })
-    
-// } catch (error) {
-//   console.error(error);
-// }
-// }
 
 
 let apiUrl= "https://flora-two.vercel.app";
@@ -217,4 +192,5 @@ function createCheckoutButton(preferenceId) {
     );
   };
   window.checkoutButton = renderComponent(bricksBuilder);
-}}
+}
+}
