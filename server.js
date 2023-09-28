@@ -6,7 +6,7 @@ const mercadopago = require("mercadopago");
 
 // REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
 mercadopago.configure({
-  access_token: "TEST-8756355838713146-090922-7c2fab5d1e466389ba76673701a3f6c5-23016067",
+  access_token: "",
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
   res.sendFile(filePath);
 });
 
-app.post("http://flora-two.vercel.app/create_preference", (req, res) => {
+app.post("/create_preference", (req, res) => {
   let preference = {
     items: [
       {
@@ -30,8 +30,8 @@ app.post("http://flora-two.vercel.app/create_preference", (req, res) => {
       },
     ],
     back_urls: {
-      success: "http://localhost:8080",
-      failure: "http://localhost:8080",
+      success: "https://localhost:8080",
+      failure: "https://localhost:8080",
       pending: "",
     },
     auto_return: "approved",

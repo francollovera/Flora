@@ -109,7 +109,7 @@ function actualizarTotal() {
 
 
 // REPLACE WITH YOUR PUBLIC KEY AVAILABLE IN: https://developers.mercadopago.com/panel
-const mercadopago = new MercadoPago('APP_USR-5102c4a1-b24f-4aed-80d0-29d6a0a2ac3f', {
+const mercadopago = new MercadoPago('', {
   locale: 'es-AR' // The most common are: 'pt-BR', 'es-AR' and 'en-US'
 });
 
@@ -131,14 +131,14 @@ function Mercado() {
 
 
 
-let apiUrl= "https://flora-two.vercel.app";
+
 
 
 
 
 
 try {
-  fetch(`${apiUrl}/create_preference`, {
+  fetch(`https://localhost:8080/create_preference`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
