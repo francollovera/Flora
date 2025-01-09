@@ -136,10 +136,35 @@ background-color: transparent;
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
-.texto-footer{
-    color: wheat;
-    font-size: .85rem;
+footer {
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px;
 }
+
+/* Contenedor para los íconos */
+.redes-footer {
+    margin-bottom: 10px; /* Espacio entre los íconos y el texto */
+}
+
+/* Estilos para los íconos */
+.instagram-link, .whatsapp-link {
+    font-size: 18px; /* Tamaño grande para los íconos */
+    color: #fffdfd; /* Color de los íconos */
+    text-decoration: none; /* Quitar subrayado */
+    margin: 0 15px; /* Espacio entre los íconos */
+}
+
+/* Alineación de los íconos */
+.redes-footer i {
+    vertical-align: middle; /* Centra el ícono verticalmente */
+}
+
+/* Estilo del texto del footer */
+.texto-footer {
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #f9f9f9; /* Color del texto */
+}
+
 main{
     /* background-color:var(--clr-white); */
     background-image: url('./blue-2852879_1280-fotor-20230918161630.jpg');

@@ -96,7 +96,10 @@ function actualizarTotal(){
 total.innerText = `$${totalCalculado}`;
 }
 
+botonComprar.addEventListener("click", comprarCarrito);
+
 botonComprar.addEventListener("click", vaciarCarrito)
+
 function comprarCarrito(){
     productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito))
