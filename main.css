@@ -9,7 +9,6 @@
     --clr-gray: #c9bcbc;
     --clr-red: #961818;
 
-
 }
 *{
     margin: 0;
@@ -138,7 +137,14 @@ background-color: transparent;
 }
 footer {
     text-align: center; /* Centra el contenido del footer */
-    padding: 20px;
+    padding: 20px;}
+
+.texto-footer{
+    color: wheat;
+    font-size: .85rem;
+    display: flex;
+    align-items: flex-start;
+
 }
 
 /* Contenedor para los íconos */
@@ -448,6 +454,8 @@ color: var(--clr-white);
     }
     .swal2-container{
     margin: 13px;
+    padding: 0;
     
     }
+    
 }
