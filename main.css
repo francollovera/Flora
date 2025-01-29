@@ -8,8 +8,8 @@
     --clr-white: #eddddd;
     --clr-gray: #c9bcbc;
     --clr-red: #961818;
-
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -22,18 +22,17 @@ h1,h2,h3,h4,h5,p{
     padding: 0;
     text-align: center;
     gap: 10px;
-
 }
+
 a,input,textarea,ul{
     margin: 0;
     padding: 0;
-    
-
 }
 
 ul{
     list-style-type: none;
 }
+
 a{
     text-decoration: none;
 }
@@ -55,19 +54,19 @@ aside{
     flex-direction: column;
     justify-content: space-between;
 }
+
 .logo{
-font-weight: 400;
-font-size: 1.3rem;
-display: flex;
-align-items: flex-end;
+    font-weight: 400;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-end;
 }
+
 .menu{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
-
-
 
 .boton-menu{
     background-color: transparent;
@@ -81,9 +80,9 @@ align-items: flex-end;
     padding: 1rem;
     font-size: .85rem;
     align-items: center;
-    width: 100% ;
-
+    width: 100%;
 }
+
 .boton-menu.active{
     background-color: var(--clr-white);
     color: var(--clr-main);
@@ -92,6 +91,7 @@ align-items: flex-end;
     border-bottom-left-radius: 1rem;
     position: relative;
 }
+
 .boton-menu.active::before{
     content:'';
     position: absolute;
@@ -99,11 +99,11 @@ align-items: flex-end;
     height: 2rem;
     bottom: 100%;
     right: 0;
-background-color: transparent;
+    background-color: transparent;
     border-bottom-right-radius: .5rem;
     box-shadow: 0 1rem 0 var(--clr-white);
-
 }
+
 .boton-menu.active::after{
     content:'';
     position: absolute;
@@ -111,69 +111,66 @@ background-color: transparent;
     height: 2rem;
     top: 100%;
     right: 0;
-background-color: transparent;
+    background-color: transparent;
     border-top-right-radius: .5rem;
     box-shadow: 0 -1rem 0 var(--clr-white);
-
 }
 
 .boton-menu > .bi-hand-index-thumb-fill,
 .boton-menu > .bi-hand-index-thumb{
     transform: rotateZ(90deg);
 }
+
 .boton-carrito{
     margin-top: 2rem;
-
 }
+
 .numerito{
     background-color: var(--clr-white);
     color: var(--clr-main);
     padding: 0.15rem .25rem;
     border-radius: .25rem;
 }
+
 .boton-carrito.active .numerito{
     background-color: var(--clr-main);
     color: var(--clr-white);
 }
+
 footer {
-    text-align: center; /* Centra el contenido del footer */
-    padding: 20px;}
+    text-align: center;
+    padding: 20px;
+}
 
 .texto-footer{
     color: wheat;
     font-size: .85rem;
     display: flex;
     align-items: flex-start;
-
 }
 
-/* Contenedor para los íconos */
 .redes-footer {
-    margin-bottom: 10px; /* Espacio entre los íconos y el texto */
+    margin-bottom: 10px;
 }
 
-/* Estilos para los íconos */
 .instagram-link, .whatsapp-link {
-    font-size: 18px; /* Tamaño grande para los íconos */
-    color: #fffdfd; /* Color de los íconos */
-    text-decoration: none; /* Quitar subrayado */
-    margin: 0 15px; /* Espacio entre los íconos */
+    font-size: 18px;
+    color: #fffdfd;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-/* Alineación de los íconos */
 .redes-footer i {
-    vertical-align: middle; /* Centra el ícono verticalmente */
+    vertical-align: middle;
 }
 
-/* Estilo del texto del footer */
 .texto-footer {
-    font-size: 16px; /* Ajusta el tamaño del texto */
-    color: #f9f9f9; /* Color del texto */
+    font-size: 16px;
+    color: #f9f9f9;
 }
 
 main{
-    /* background-color:var(--clr-white); */
-    background-image: url('./blue-2852879_1280-fotor-20230918161630.jpg');
+    background-image: url('./img/blue-2852879_1280-fotor-20230918161630.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 1rem;
@@ -181,19 +178,23 @@ main{
     border-radius: 2rem;
     padding: 3rem;
 }
+
 .titulo-principal{
     color: var(--clr-main-dark);
     margin-bottom: 2rem;
 }
+
 .contenedor-productos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
+
 .producto-imagen{
     max-width: 100%;
     border-radius: 1rem;
 }
+
 .producto-detalles{
     background-color: var(--clr-main);
     color: var(--clr-white);
@@ -205,10 +206,11 @@ main{
     flex-direction: column;
     gap: .25rem;
 }
+
 .producto-titulo{
     font-size: 1rem;
-
 }
+
 .producto-agregar{
     border: 0;
     background-color: var(--clr-white);
@@ -220,33 +222,32 @@ main{
     border: 2px solid var(--clr-white);
     transition: background-color .2s, color .2s;
 }
+
 .producto-agregar:hover{
-background-color: var(--clr-main);
-color: var(--clr-white);
+    background-color: var(--clr-main);
+    color: var(--clr-white);
 }
+
 .whatsapp{
     z-index: 3;
     display: flex;
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        background-color: #25d366;
-        color: #fff;
-        padding: 8px 10px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 30px;
-      
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 8px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
 }
+
 .whatsapp:hover{
     background-color: var(--clr-main);
 }
-
-
-/* CARRITO */
 
 .contenedor-carrito {
     display: flex;
@@ -333,6 +334,7 @@ color: var(--clr-white);
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
+
 .header-mobile {
     display: none;
 }
@@ -345,23 +347,19 @@ color: var(--clr-white);
     display: none;
 }
 
-
 @media screen and (max-width: 850px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
 }
 
 @media screen and (max-width: 675px) {
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
     }
-    
 }
 
 @media screen and (max-width: 600px) {
-
     .wrapper {
         min-height: 100vh;
         display: flex;
@@ -442,20 +440,15 @@ color: var(--clr-white);
         flex-wrap: wrap;
         row-gap: 1rem;
     }
-    
-
 }
-
-
 
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-rows: 1fr;
     }
+    
     .swal2-container{
-    margin: 13px;
-    padding: 0;
-    
+        margin: 13px;
+        padding: 0;
     }
-    
 }

@@ -154,15 +154,337 @@ const productos = [
     "precio": 1000
   },
   {
-    "id": "pantalon-08",
-    "titulo": "Dije 08",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.51 PM.jpeg",
+    "id": "aros",
+    "titulo": "Aro 01",
+    "imagen": "./img/AROS/Aro 01.jpg",
     "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
+      "nombre": "Aros",
+      "id": "aros"
     },
     "precio": 1000
-  }
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 02",
+    "imagen": "./img/AROS/Aro 02.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 03",
+    "imagen": "./img/AROS/Aro 03.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 04",
+    "imagen": "./img/AROS/Aro 04.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 05",
+    "imagen": "./img/AROS/Aro 05.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 06",
+    "imagen": "./img/AROS/Aro 06.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 07",
+    "imagen": "./img/AROS/Aro 07.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 08",
+    "imagen": "./img/AROS/Aro 08.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 09",
+    "imagen": "./img/AROS/Aro 09.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 10",
+    "imagen": "./img/AROS/Aro 10.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 11",
+    "imagen": "./img/AROS/Aro 11.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 12",
+    "imagen": "./img/AROS/Aro 12.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 13",
+    "imagen": "./img/AROS/Aro 13.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 14",
+    "imagen": "./img/AROS/Aro 14.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 15",
+    "imagen": "./img/AROS/Aro 15.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 16",
+    "imagen": "./img/AROS/Aro 16.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 17",
+    "imagen": "./img/AROS/Aro 17.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 18",
+    "imagen": "./img/AROS/Aro 18.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 19",
+    "imagen": "./img/AROS/Aro 19.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 20",
+    "imagen": "./img/AROS/Aro 20.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 21",
+    "imagen": "./img/AROS/Aro 21.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 22",
+    "imagen": "./img/AROS/Aro 22.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 23",
+    "imagen": "./img/AROS/Aro 23.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 24",
+    "imagen": "./img/AROS/Aro 24.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 25",
+    "imagen": "./img/AROS/Aro 25.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 26",
+    "imagen": "./img/AROS/Aro 26.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 27",
+    "imagen": "./img/AROS/Aro 27.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 28",
+    "imagen": "./img/AROS/Aro 28.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 29",
+    "imagen": "./img/AROS/Aro 29.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 30",
+    "imagen": "./img/AROS/Aro 30.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 31",
+    "imagen": "./img/AROS/Aro 31.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 32",
+    "imagen": "./img/AROS/Aro 32.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 33",
+    "imagen": "./img/AROS/Aro 33.jpg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 1000
+  },
+ 
+
 ]
 
 let productosEnCarrito;
