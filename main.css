@@ -168,6 +168,13 @@ footer {
     font-size: 16px;
     color: #f9f9f9;
 }
+.textopeque-footer {
+    font-size: 8px;
+    color: #f9f9f9;
+    margin-top: 20px;
+    margin-right: 155px;
+}
+
 
 main{
     background-image: url('./img/blue-2852879_1280-fotor-20230918161630.jpg');

@@ -9,7 +9,7 @@ const productos = [
       "nombre": "Escarapelas",
       "id": "abrigos"
     },
-    "precio": 2500
+    "precio": 4500
   },
   {
     "id": "abrigo-02",
@@ -29,7 +29,7 @@ const productos = [
       "nombre": "Escarapelas",
       "id": "abrigos"
     },
-    "precio": 2500
+    "precio": 3000
   },
   {
     "id": "abrigo-04",
@@ -39,7 +39,7 @@ const productos = [
       "nombre": "Escarapelas",
       "id": "abrigos"
     },
-    "precio": 2500
+    "precio": 4000
   },
 
   {
@@ -50,7 +50,7 @@ const productos = [
       "nombre": "Pulseras",
       "id": "camisetas"
     },
-    "precio": 1500
+    "precio": 3000
   },
   {
     "id": "camiseta-02",
@@ -60,7 +60,7 @@ const productos = [
       "nombre": "Pulseras",
       "id": "camisetas"
     },
-    "precio": 1500
+    "precio": 3500
   },
   {
     "id": "camiseta-03",
@@ -70,7 +70,7 @@ const productos = [
       "nombre": "Pulseras",
       "id": "camisetas"
     },
-    "precio": 1500
+    "precio": 3000
   },
   {
     "id": "camiseta-04",
@@ -80,7 +80,7 @@ const productos = [
       "nombre": "Camisetas",
       "id": "camisetas"
     },
-    "precio": 1500
+    "precio": 3000
   },
 
   {
@@ -101,7 +101,7 @@ const productos = [
       "nombre": "Dijes",
       "id": "pantalones"
     },
-    "precio": 1200
+    "precio": 3500
   },
   {
     "id": "pantalon-03",
@@ -111,47 +111,7 @@ const productos = [
       "nombre": "Dijes",
       "id": "pantalones"
     },
-    "precio": 1000
-  },
-  {
-    "id": "pantalon-04",
-    "titulo": "Dije 04",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.50 PM (1).jpeg",
-    "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
-    },
-    "precio": 1000
-  },
-  {
-    "id": "pantalon-05",
-    "titulo": "Dije 05",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.50 PM.jpeg",
-    "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
-    },
-    "precio": 1000
-  },
-  {
-    "id": "pantalon-06",
-    "titulo": "Dije 06",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.51 PM (1).jpeg",
-    "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
-    },
-    "precio": 1000
-  },
-  {
-    "id": "pantalon-07",
-    "titulo": "Dije 07",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.51 PM (2).jpeg",
-    "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
-    },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
@@ -161,7 +121,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
@@ -171,7 +131,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -181,7 +141,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -191,7 +151,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -201,7 +161,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
@@ -211,7 +171,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -221,7 +181,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -231,7 +191,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -241,7 +201,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -251,7 +211,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
@@ -261,7 +221,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
@@ -271,7 +231,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -281,7 +241,7 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2500
   },
   {
     "id": "aros",
@@ -291,197 +251,237 @@ const productos = [
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 2000
   },
   {
     "id": "aros",
-    "titulo": "Aro 15",
+    "titulo": "Aros de Fiesta 01",
     "imagen": "./img/AROS/Aro 15.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 6500
   },
   {
     "id": "aros",
-    "titulo": "Aro 16",
+    "titulo": "Aros de Fiesta 02",
     "imagen": "./img/AROS/Aro 16.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 12000
   },
   {
     "id": "aros",
-    "titulo": "Aro 17",
+    "titulo": "Aros de Fiesta 03",
     "imagen": "./img/AROS/Aro 17.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 12000
   },
   {
     "id": "aros",
-    "titulo": "Aro 18",
+    "titulo": "Aros de Fiesta 04",
     "imagen": "./img/AROS/Aro 18.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 12000
   },
   {
     "id": "aros",
-    "titulo": "Aro 19",
+    "titulo": "Aros de Fiesta 05",
     "imagen": "./img/AROS/Aro 19.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 5000
   },
   {
     "id": "aros",
-    "titulo": "Aro 20",
+    "titulo": "Aros de Fiesta 06",
     "imagen": "./img/AROS/Aro 20.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 8000
   },
   {
     "id": "aros",
-    "titulo": "Aro 21",
+    "titulo": "Aros de Fiesta 07",
     "imagen": "./img/AROS/Aro 21.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 5000
   },
   {
     "id": "aros",
-    "titulo": "Aro 22",
+    "titulo": "Aros de Fiesta 08",
     "imagen": "./img/AROS/Aro 22.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 6500
   },
   {
     "id": "aros",
-    "titulo": "Aro 23",
+    "titulo": "Aros de Fiesta 09",
     "imagen": "./img/AROS/Aro 23.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 6500
   },
   {
     "id": "aros",
-    "titulo": "Aro 24",
+    "titulo": "Aros de Fiesta 10",
     "imagen": "./img/AROS/Aro 24.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 8000
   },
   {
     "id": "aros",
-    "titulo": "Aro 25",
+    "titulo": "Aros de Fiesta 11",
     "imagen": "./img/AROS/Aro 25.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 8000
   },
   {
     "id": "aros",
-    "titulo": "Aro 26",
+    "titulo": "Aros de Fiesta 12",
     "imagen": "./img/AROS/Aro 26.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 8000
   },
   {
     "id": "aros",
-    "titulo": "Aro 27",
+    "titulo": "Aros de Fiesta 13",
     "imagen": "./img/AROS/Aro 27.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3500
   },
   {
     "id": "aros",
-    "titulo": "Aro 28",
+    "titulo": "Aros de Fiesta 14",
     "imagen": "./img/AROS/Aro 28.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 4000
   },
   {
     "id": "aros",
-    "titulo": "Aro 29",
+    "titulo": "Aros de Fiesta 15",
     "imagen": "./img/AROS/Aro 29.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 4000
   },
   {
     "id": "aros",
-    "titulo": "Aro 30",
+    "titulo": "Aros de Fiesta 16",
     "imagen": "./img/AROS/Aro 30.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 8000
   },
   {
     "id": "aros",
-    "titulo": "Aro 31",
+    "titulo": "Aros de Fiesta 17",
     "imagen": "./img/AROS/Aro 31.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 7000
   },
   {
     "id": "aros",
-    "titulo": "Aro 32",
+    "titulo": "Aros de Fiesta 18",
     "imagen": "./img/AROS/Aro 32.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
   },
   {
     "id": "aros",
-    "titulo": "Aro 33",
+    "titulo": "Aros de Fiesta 19",
     "imagen": "./img/AROS/Aro 33.jpg",
     "categoria": {
       "nombre": "Aros",
       "id": "aros"
     },
-    "precio": 1000
+    "precio": 3000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 34",
+    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.50 PM (1).jpeg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 2500
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 35",
+    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.50 PM.jpeg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 2500
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 36",
+    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.51 PM (1).jpeg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 2000
+  },
+  {
+    "id": "aros",
+    "titulo": "Aro 37",
+    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.17.51 PM (2).jpeg",
+    "categoria": {
+      "nombre": "Aros",
+      "id": "aros"
+    },
+    "precio": 2500
   },
  
 
@@ -514,28 +514,28 @@ botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
 }))
 
 function cargarProductos(productosElegidos) {
-
   contenedorProductos.innerHTML = "";
-
-  productosElegidos.forEach(producto => {
-
-    const div = document.createElement("div");
-    div.classList.add("producto");
-    div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
-            <div class="producto-detalles">
-                <h3 class="producto-titulo">${producto.titulo}</h3>
-                <p class="producto-precio">$${producto.precio}</p>
-                <button class="producto-agregar" id="${producto.id}">Agregar</button>
-            </div>
-        `;
-
-    contenedorProductos.append(div);
-  })
-
+  
+  // Crear una copia del array y revertir el orden
+  const productosInvertidos = [...productosElegidos].reverse();
+  
+  productosInvertidos.forEach(producto => {
+      const div = document.createElement("div");
+      div.classList.add("producto");
+      div.innerHTML = `
+          <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+          <div class="producto-detalles">
+              <h3 class="producto-titulo">${producto.titulo}</h3>
+              <p class="producto-precio">$${producto.precio}</p>
+              <button class="producto-agregar" id="${producto.id}">Agregar</button>
+          </div>
+      `;
+      contenedorProductos.append(div);
+  });
+  
   actualizarBotonesAgregar();
-
 }
+
 
 
 botonesCategorias.forEach(boton => {
