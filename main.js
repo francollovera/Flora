@@ -84,18 +84,8 @@ const productos = [
   },
 
   {
-    "id": "pantalon-01",
-    "titulo": "Dije 01",
-    "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.16.22 PM (1).jpeg",
-    "categoria": {
-      "nombre": "Dijes",
-      "id": "pantalones"
-    },
-    "precio": 1000
-  },
-  {
     "id": "pantalon-02",
-    "titulo": "Dije 02",
+    "titulo": "Dije 01",
     "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.16.22 PM (2).jpeg",
     "categoria": {
       "nombre": "Dijes",
@@ -105,7 +95,7 @@ const productos = [
   },
   {
     "id": "pantalon-03",
-    "titulo": "Dije 03",
+    "titulo": "Dije 02",
     "imagen": "./img/DIJES Y AROS/WhatsApp Image 2023-09-04 at 6.16.22 PM (3).jpeg",
     "categoria": {
       "nombre": "Dijes",
@@ -425,7 +415,7 @@ const productos = [
   },
   {
     "id": "aros",
-    "titulo": "Aros de Fiesta 18",
+    "titulo": "Aros 18",
     "imagen": "./img/AROS/Aro 32.jpg",
     "categoria": {
       "nombre": "Aros",
@@ -435,7 +425,7 @@ const productos = [
   },
   {
     "id": "aros",
-    "titulo": "Aros de Fiesta 19",
+    "titulo": "Aros 19",
     "imagen": "./img/AROS/Aro 33.jpg",
     "categoria": {
       "nombre": "Aros",
